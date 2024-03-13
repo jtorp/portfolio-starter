@@ -1,5 +1,5 @@
 const App = () => {
-  return <div>Hello World</div>;
+  return <div>Hello, JULIA°LΔB | ⒿⓊⓁⒾⒶ ⓉⓄⓇⓅ</div>;
 };
 
 export default App;
