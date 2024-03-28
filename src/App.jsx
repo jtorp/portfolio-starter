@@ -4,30 +4,60 @@ import './app.scss'
 import Navbar from './components/navbar/navbar.jsx'
 const App = () => {
   return ( <main>
-    <section>
-      <div id="top"></div>
+    <section id="home">
+      <div id="top">
+      <h1 className="section-heading">  Landing</h1>
+      </div>
       <Navbar/>
+
     </section>
-    <section id='about' className={cn('light-background', 'white-background')}>HERO with animation and or webgl</section>
-    <section id='projects1'>Portfolio Cases P1</section>
-    <section id='kdrops'> Knowledge Drops </section>
-    <section>Portfolio Cases P3</section>
-    <section>Portfolio Cases P4</section>
-    <section className={cn('lime-background', 'footer-wrap')}>
-      <div className={"footer-top"}>
-         <div className="left"> 
+    <section id='about' className={cn('light-background', 'white-background')}>
+    <div className='projects-screen1'>
+        <h1 className="section-heading">  HERO / About</h1>
+      </div>
+      </section>
+    <section id='projects1'>
+    <div className='projects-screen'>
+        <h1 className="section-heading"> My Projects - 1 </h1>
+      </div>
+    </section>
+    <section id='kdrops'> 
+    <div className='knowledge-screen'>
+        <h1 className="section-heading"> Knowledge Drops</h1>
+      </div>
+     </section>
+    <section id="projects2">
+    <div className='projects-screen2'>
+        <h1 className="section-heading"> My Projects - 2</h1>
+      </div>
+    </section>
+    <section id="blog"> 
+    <div className='projects-screen2'>
+        <h1 className="section-heading"> Blog</h1>
+      </div>
+    </section>
+    <section className="contact">
+      <div className='contacts-screen1'>
+        <h1 className="section-heading">Drop me a line!</h1>
+      </div>
+    </section>
+
+  <section className={cn('lime-background', 'footer-wrap')}>
+    {/* <div className="footer" style="transform: translateY(1px); will-change: transform;">  */}
+
+    <div className={"footer-top"}>
+      <div className="left"> 
          <div className="section-subheading">Links</div> 
          <div className="links"> 
          <div className="col">
           <p><a href="#about">About</a></p>
           <p><a href="#projects1">Projects</a></p>
+          <p><a href="#projects2">Projects</a></p>
           <p><a href="#kdrops">Knowledge Drops</a></p>
           <p><a href="#blog">Blog</a></p>
-
-
          </div>
-      
-        </div> </div> 
+        </div> 
+      </div> 
 
       <div className="right"> 
       <div className="section-subheading">Follow me on socials</div> 
@@ -38,7 +68,7 @@ const App = () => {
       <a target="_blank" rel="noopener noreferrer nofollow" href="https://www.quora.com/profile/Julia-Torp/answers" className="quora" previewlistener="true"><img width="20" height="20" src="../public/icons/quora.svg" alt="quora"/></a>
       <a target="_blank" rel="noopener noreferrer nofollow" href="https://codesandbox.io/u/JTO" className="codesandbox" previewlistener="true"><img width="20" height="20" src="../public/icons/codesandbox.svg" alt=""/></a> </div> </div> 
       {/* CONTACT DETAILS */}
-      <div classNameName="col" > 
+      <div className="col" > 
          <div className="contact-details"> 
          <p className='detail'>
          <img src="../public/icons/tel.svg" alt="tel"/>
@@ -64,8 +94,7 @@ const App = () => {
       <a className="back-to-top" href="#top">
       <img src="../public/icons/chevronup.png" alt=""/>
       </a>
-      
-      
+      {/* </div> */}
       </section>
   </main>)
 };

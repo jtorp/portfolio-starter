@@ -31,7 +31,26 @@ section {
     background-color: $dark;
     scroll-snap-align: center;
 }
+.section-heading{
+    font-size: 80px;
+    line-height: 90%;
+    font-weight: 700;
+    display: inline;
+    font-feature-settings: "pnum" on, "lnum" on;
 
+}
+
+// Proftfolio cases 
+
+// 
+
+// Knowledge Drops 
+
+// 
+
+// CONTACT 
+
+// 
 .black-background {
     color: $white-text;
     background-image: url(https://phenomenonstudio.com/wp-content/webp-express/webp-images/themes/phenomenon/img/black-bg.png.webp);
@@ -76,7 +95,6 @@ section {
 .footer-wrap {
     width: 100vw;
     height: auto;
-    min-height: 65vh;
     background-color: #E7F870 !important;
     display: flex;
     z-index: 0;
